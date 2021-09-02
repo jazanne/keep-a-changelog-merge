@@ -1,0 +1,21 @@
+{
+  "name": "keep-a-changelog-merge",
+  "version": "1.0.0",
+  "description": "Manages merge conflicts of your CHANGELOG.md between different branches",
+  "main": "index.js",
+  "dependencies": {
+    "md-2-json": "^2.0.0",
+    "yargs": "^17.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "keep-a-changelog"
+  ],
+  "author": "Ryan Gartin",
+  "license": "MIT"
+}

@@ -17,7 +17,7 @@ const config = {
   destinationChangelog:
     process.env.DESTINATION_CHANGELOG ||
     argv.destination ||
-    "CHANGELOG.md.orig",
+    "CHANGELOG.md.remote",
   outputFile: process.env.OUTPUT_FILE || argv.output || null,
   title: process.env.CHANGELOG_TITLE || argv.title || "Changelog",
 };

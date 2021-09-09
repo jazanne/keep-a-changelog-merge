@@ -4,7 +4,7 @@ inputs:
   remote:
     description: 'The file path of the CHANGELOG.md which you are syncing with. (eg. Copied from your default branch)'
     required: true
-    default: ${{ github.event.repository.default_branch }}
+    default: "./CHANGELOG.md.remote"
   local:
     description: 'The CHANGELOG.md file path'
     required: false

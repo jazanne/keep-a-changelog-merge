@@ -4,14 +4,16 @@
   "description": "Manages merge conflicts of your CHANGELOG.md between different branches",
   "main": "index.js",
   "dependencies": {
-    "md-2-json": "^2.0.0",
-    "yargs": "^17.1.1"
+    "md-2-json": "2.0.0",
+    "yargs": "17.7.2"
   },
   "devDependencies": {
+    "@vercel/ncc": "^0.38.1",
     "mocha": "^9.1.1"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "ncc build index.js"
   },
   "keywords": [
     "keep-a-changelog"

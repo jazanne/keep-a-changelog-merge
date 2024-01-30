@@ -7,7 +7,6 @@ RUN apk update && apk upgrade && \
 
 
 FROM dependencies AS keep-a-changelog-merge
-COPY index.js /app
-COPY utils.js /app
+COPY dist/index.js /app
 
 ENTRYPOINT ["node", "index.js"]

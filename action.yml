@@ -9,10 +9,14 @@ inputs:
     description: 'The CHANGELOG.md file path'
     required: false
     default: "./CHANGELOG.md"
+  output:
+    description: 'The output file path'
+    required: false
+    default: "./CHANGELOG.md"
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - --source ${{ inputs.local }}
     - --destination ${{ inputs.remote }}
-    - --output ${{ inputs.local }}
+    - --output ${{ inputs.output }}
